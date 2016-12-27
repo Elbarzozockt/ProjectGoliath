@@ -1,8 +1,8 @@
 <?php
 
-include ("./db_connect.inc.php");
+include ("db_connect.inc.php");
  
-$dbc = mysqli_connect($DBHOST,$DBUSER,$DBPW,$DBNAME,$DBPORT);
+$dbc = mysqli_connect(DBHOST,DBUSER,DBPW,DBNAME,DBPORT);
 if (!$dbc) {
     die("Database connection failed: " . mysqli_error($dbc));
     exit();
@@ -31,7 +31,7 @@ $values = mysqli_query($dbc, "SELECT name FROM player");
 
 $csv_output=mysql_fetch_array($values);
 
-//}
+}
 
 print $csv_output;
 exit;

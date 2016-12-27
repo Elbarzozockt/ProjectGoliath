@@ -1,10 +1,10 @@
 <?php 
 
-include db_connect.php.inc;
+include ("db_connect.inc.php");
 
 
 //mysqli_connect(host,username,password,dbname,port,socket);
-$dbc = mysqli_connect(DBHOST,DBUSER,DBPW,DBNAME,DBPORT);
+$dbc = mysqli_connect($DBHOST,$DBUSER,$DBPW,$DBNAME,$DBPORT);
 if (!$dbc) {
     die("Database connection failed: " . mysqli_error($dbc));
     exit();

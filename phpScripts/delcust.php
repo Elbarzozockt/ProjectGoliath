@@ -1,8 +1,8 @@
 <?php 
 
-include db_connect.php.inc;
+include ("db_connect.inc.php");
 
-$dbc = mysqli_connect(DBHOST,DBUSER,DBPW,DBNAME,DBPORT);
+$dbc = mysqli_connect($DBHOST,$DBUSER,$DBPW,$DBNAME,$DBPORT);
 if (!$dbc) {
     die("Database connection failed: " . mysqli_error($dbc));
     exit();
