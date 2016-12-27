@@ -25,7 +25,7 @@ $password = mysqli_real_escape_string($dbc,$_GET['password']);
 //creation time stamp
 //$creation_time_stamp = date('Y-m-d');
 
-$query = "DELETE FROM player WHERE (name= '$name') AND (password='$password)";
+$query = "DELETE FROM player WHERE (name= '$name') AND (password='$password')";
 
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 

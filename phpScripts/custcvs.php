@@ -18,7 +18,7 @@ if (!$dbc) {
     // exit(); 
 // }
 
-$result = mysqli_query($dbc, "SHOW COLUMNS FROM customer");
+$result = mysqli_query($dbc, "SHOW COLUMNS FROM player");
 $numberOfRows = mysqli_num_rows($result);
 if ($numberOfRows > 0) {
 
