@@ -1,0 +1,13 @@
+
+db name:	ch_warn_adm
+server:		78.46.160.25
+port:		3306
+
+
+mysql user:	ch_warn_adm
+user pw:	R4TYDEbo8WDZ0su2
+
+
+mysql user:	ch_warn_read
+user_pw:	51ONP71W9rRXiik2
+Rechte:		SELECT INSERT UPDATE DELETE 
