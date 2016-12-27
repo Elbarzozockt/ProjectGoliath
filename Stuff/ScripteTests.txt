@@ -1,0 +1,8 @@
+Account Creation test
+
+http://kicker.effizienzbox.de/submitcust.php?name=Andre&password=platzhalter&picture=platzhalter
+
+
+Spielerliste abrufen
+
+http://kicker.effizienzbox.de/custcsv.php
