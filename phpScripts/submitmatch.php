@@ -31,7 +31,7 @@ $Id_league = 1;
 
 
 //creation time stamp
-$creatiotime_stamp = date('Y-m-d H:i');
+$creationtime_stamp = date('Y-m-d H:i');
 
 $querymatch = "INSERT INTO kicker_matches (Id_league, timestamp) VALUES ('$Id_league', '$creation_time_stamp')";
 
