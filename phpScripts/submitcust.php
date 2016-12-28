@@ -2,6 +2,8 @@
 
 include ("db_connect.inc.php");
 
+date_default_timezone_set('Europe/Berlin');
+
 $dbc = mysqli_connect($DBHOST,$DBUSER,$DBPW,$DBNAME,$DBPORT);
 if (!$dbc) {
     die("Database connection failed: " . mysqli_error($dbc));

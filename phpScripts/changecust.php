@@ -21,7 +21,7 @@ $password = mysqli_real_escape_string($dbc,$_GET['password']);
 $picture = mysqli_real_escape_string($dbc,$_GET['picture']);
 
 
-$query = "UPDATE customer SET picture='$picture' WHERE (name='$name') AND (password=$password)";
+$query = "UPDATE player SET picture='$picture' WHERE (name='$name') AND (password=$password)";
 
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 

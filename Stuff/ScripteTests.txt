@@ -2,6 +2,10 @@ Account Creation test
 
 http://kicker.effizienzbox.de/submitcust.php?name=Andre&password=platzhalter&picture=platzhalter
 
+Account Deletion test
+
+http://kicker.effizienzbox.de/delcust.php?name=Andre&password=platzhalter
+
 
 Spielerliste abrufen
 
