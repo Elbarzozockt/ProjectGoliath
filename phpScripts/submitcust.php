@@ -16,6 +16,9 @@ if (!$dbc) {
     // exit(); 
 // }
 
+
+          
+
 //player ID automatisch
 $name = mysqli_real_escape_string($dbc, $_GET['name']);
 $password = mysqli_real_escape_string($dbc,$_GET['password']);
@@ -23,9 +26,19 @@ $picture = mysqli_real_escape_string($dbc,$_GET['picture']);
 //creation time stamp
 $creation_time_stamp = date('Y-m-d');
 
-$query = "INSERT INTO player (name, password, picture, creation_time_stamp) VALUES ('$name', '$password', '$picture', '$creation_time_stamp')";
+$checkquery = "SELECT name FROM player WHERE name='$name'";
 
+if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
+{
+	print '0';
+}
+else
+{
+$query = "INSERT INTO player (name, password, picture, creation_time_stamp) VALUES ('$name', '$password', '$picture', '$creation_time_stamp')";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
+	
+	print '1';
+}
 
 mysqli_close($dbc); 
 ?>

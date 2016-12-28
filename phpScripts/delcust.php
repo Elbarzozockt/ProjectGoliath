@@ -21,9 +21,24 @@ $password = mysqli_real_escape_string($dbc,$_GET['password']);
 //creation time stamp
 //$creation_time_stamp = date('Y-m-d');
 
-$query = "DELETE FROM player WHERE (name= '$name') AND (password='$password')";
 
+$checkquery = "SELECT * FROM player WHERE (name= '$name') AND (password='$password')";
+if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
+{
+	
+$query = "DELETE FROM player WHERE (name= '$name') AND (password='$password')";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
+
+print '1';
+
+}
+else
+{
+	
+//account nicht vorhanden oder passwort stimmt nicht	
+print '0';
+
+}
 
 mysqli_close($dbc); 
 ?>
