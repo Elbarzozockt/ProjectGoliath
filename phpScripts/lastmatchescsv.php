@@ -14,6 +14,7 @@ if (!$dbc) {
 $Id_league=1;
 
 $GetIdlastfivematches_querry ="SELECT Id, timestamp FROM kicker_matches WHERE Id_league='$Id_league' ORDER BY timestamp DESC LIMIT 5";
+
 $GetIdlastfivematches = mysqli_query($dbc, $GetIdlastfivematches_querry);
 
 $Id_matches = mysqli_fetch_all($GetIdlastfivematches);
