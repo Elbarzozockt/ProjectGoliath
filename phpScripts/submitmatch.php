@@ -33,9 +33,19 @@ $score	= array($score1, $score2, $score3, $score4);
 $Id_league = 1;
 
 
+
+
+
+
 //creation time stamp
 $creation_time_stamp = date('Y-m-d H:i');
 
+$checkplayer_querry= "SELECT name FROM player WHERE (name='$player[0]') OR (name='$player[1]') OR (name='$player[2]') OR (name='$player[3]') ";
+
+$debu =4-mysqli_num_rows(mysqli_query($dbc, $checkplayer_querry));
+
+if(mysqli_num_rows(mysqli_query($dbc, $checkplayer_querry)) == 4)
+{
 $querymatch = "INSERT INTO kicker_matches (Id_league, timestamp) VALUES ('$Id_league', '$creation_time_stamp')";
 
 $resultmatch = mysqli_query($dbc, $querymatch) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
@@ -57,7 +67,11 @@ $resultscore = mysqli_query($dbc, $queryscores) or trigger_error("Query MySQL Er
 }
 
 print "Match wurde eingetragen";
-
+}
+else
+{
+print $debu." Spieler nicht registriert! Spiel wurde nicht gewertet.";
+}
 //echo $Id_player[0];
 
 mysqli_close($dbc); 

@@ -15,33 +15,25 @@ if (!$dbc) {
 // }
 
 //player ID automatisch
-$Id_match = mysqli_real_escape_string($dbc, $_GET['Id_match']);
-//$password = mysqli_real_escape_string($dbc,$_GET['password']);
+$Account = mysqli_real_escape_string($dbc, $_GET['Account']);
+$password = mysqli_real_escape_string($dbc,$_GET['password']);
 //$picture = mysqli_real_escape_string($dbc,$_GET['picture']);
 //creation time stamp
 //$creation_time_stamp = date('Y-m-d');
 
-
-$checkquery = "SELECT Id FROM kicker_matches WHERE (Id= '$Id_match')";
-if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
-{
-	
-$query = "DELETE FROM kicker_matches WHERE (Id= '$Id_match')";
+if ($Account == "Admin" & $password == "H3FT1G"){
+$query = "DELETE FROM kicker_matches";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 
-$query = "DELETE FROM player_scores WHERE (Id_match= '$Id_match')";
+$query = "DELETE FROM player_scores";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 
 //Match wurde gelöscht
-print "Match wurde gelöscht!";
-
+print "Alle Matches wurden gelöscht!";
 }
 else
 {
-	
-//Match nicht vorhanden
-print "Match nicht vorhanden!";
-
+	print "Account oder Passwort falsch!";
 }
 
 mysqli_close($dbc); 
