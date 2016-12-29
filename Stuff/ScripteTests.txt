@@ -10,3 +10,8 @@ http://kicker.effizienzbox.de/delcust.php?name=Andre&password=platzhalter
 Spielerliste abrufen
 
 http://kicker.effizienzbox.de/custcsv.php
+
+
+Spiel eintragen
+
+http://kicker.effizienzbox.de/submitmatch.php?player1=Andre&player2=Isa&player3=Mike&player4=Marcus&score1=4&score2=2&score3=2&score4=2

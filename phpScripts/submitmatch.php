@@ -56,6 +56,8 @@ $queryscores = "INSERT INTO player_scores (Id_league, Id_match, Id_player, posit
 $resultscore = mysqli_query($dbc, $queryscores) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 }
 
+print "Match wurde eingetragen";
+
 //echo $Id_player[0];
 
 mysqli_close($dbc); 
