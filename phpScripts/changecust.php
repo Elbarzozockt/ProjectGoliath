@@ -21,13 +21,26 @@ $password = mysqli_real_escape_string($dbc,$_GET['password']);
 $picture = mysqli_real_escape_string($dbc,$_GET['picture']);
 
 
-$query = "UPDATE player SET picture='$picture' WHERE (name='$name') AND (password=$password)";
 
+$checkquery = "SELECT * FROM player WHERE (name= '$name') AND (password='$password')";
+if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
+{
+	
+$query = "UPDATE player SET picture='$picture' WHERE (name='$name') AND (password=$password)";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
+//Account geändert
+print "Account wurde geändert!";
+
+}
+else
+{
+	
+//account nicht vorhanden oder passwort stimmt nicht	
+print "Accountname oder Passwort falsch!";
+
+}
+
 
 mysqli_close($dbc); 
 
 ?>
-
-<!-- http://newjustin.com/updatecust.php?FirstName=Sue&LastName=Banas&Street=123&City=Pittsburgh&State=PA&Zip=15222&Email=derek@aol.com&Phone=4125551212&CustomerId=14
--->

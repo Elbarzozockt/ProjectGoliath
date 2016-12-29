@@ -30,14 +30,15 @@ $checkquery = "SELECT name FROM player WHERE name='$name'";
 
 if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
 {
-	print '0';
+	//Account name bereits vergeben
+	print "Accountname bereits vergeben!";
 }
 else
 {
 $query = "INSERT INTO player (name, password, picture, creation_time_stamp) VALUES ('$name', '$password', '$picture', '$creation_time_stamp')";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
-	
-	print '1';
+	//Account angelegt
+	print 'Account wurde angelegt!';
 }
 
 mysqli_close($dbc); 

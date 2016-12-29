@@ -28,15 +28,15 @@ if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
 	
 $query = "DELETE FROM player WHERE (name= '$name') AND (password='$password')";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
-
-print '1';
+//Account gelöscht
+print "Account wurde gelöscht!";
 
 }
 else
 {
 	
 //account nicht vorhanden oder passwort stimmt nicht	
-print '0';
+print "Accountname oder Passwort falsch!";
 
 }
 
