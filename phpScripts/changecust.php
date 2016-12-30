@@ -26,7 +26,7 @@ $checkquery = "SELECT * FROM player WHERE (name= '$name') AND (password='$passwo
 if(mysqli_num_rows(mysqli_query($dbc, $checkquery)) >= 1)
 {
 	
-$query = "UPDATE player SET picture='$picture' WHERE (name='$name') AND (password=$password)";
+$query = "UPDATE player SET picture='$picture' WHERE (name='$name') AND (password='$password')";
 $result = mysqli_query($dbc, $query) or trigger_error("Query MySQL Error: " . mysqli_error($dbc)); 
 //Account geändert
 print "Account wurde geändert!";
