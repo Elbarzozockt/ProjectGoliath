@@ -11,21 +11,43 @@ if (!$dbc) {
 
 //$Id_league = mysqli_real_escape_string($dbc,$_GET['Id_league']);
 
+// $results_array = array();
+// $result = $mysqli->query($query);
+// while ($row = $result->fetch_assoc()) {
+  // $results_array[] = $row;
+// }
+
+
 $Id_league=1;
 
-$GetIdlastfivematches_querry ="SELECT Id, timestamp FROM kicker_matches WHERE Id_league='$Id_league' ORDER BY timestamp DESC LIMIT 5";
+$GetIdlastfivematches_querry ="SELECT Id, timestamp FROM kicker_matches WHERE Id_league='$Id_league' ORDER BY Id DESC LIMIT 5";
 
 $GetIdlastfivematches = mysqli_query($dbc, $GetIdlastfivematches_querry);
 
-$Id_matches = mysqli_fetch_all($GetIdlastfivematches);
+$Id_matches = array();
+while ($row = mysqli_fetch_row($GetIdlastfivematches)) {
+  $Id_matches[] = $row;
+}
+
+//print $Id_matches[1][1];
+
+//$Id_matches = mysqli_fetch_all($GetIdlastfivematches);
 
 $numberOfRows = mysqli_num_rows($GetIdlastfivematches);
+
+$player = array();
 
 for($i=0; $i<$numberOfRows; $i++){
 $k = $Id_matches[$i][0];
 $iplus1= $i + 1;
 $player_querry ="SELECT player.name, player_scores.score FROM player_scores INNER JOIN player ON player.Id=player_scores.Id_player WHERE (Id_match='$k') ORDER BY position";
-$player[$i] = mysqli_fetch_all(mysqli_query($dbc, $player_querry));
+
+//$player[$i] = mysqli_fetch_all(mysqli_query($dbc, $player_querry));
+$test =mysqli_query($dbc, $player_querry);
+while ($row = mysqli_fetch_row($test)) {
+  $player[$i][] = $row;
+}
+
 }
 
 
