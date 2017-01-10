@@ -172,10 +172,10 @@
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="1958.1601393493693" width="3823.6370831341296" x="859.76291686587" y="196.13282012939453"/>
+              <y:Geometry height="1958.1601393493688" width="3823.6370831341305" x="1778.5047938741805" y="78.40458965848075"/>
               <y:Fill color="#CAECFF80" transparent="false"/>
               <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="3823.6370831341296" x="0.0" y="0.0">2</y:NodeLabel>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="3823.6370831341305" x="0.0" y="0.0">2</y:NodeLabel>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -201,10 +201,10 @@
             <y:ProxyAutoBoundsNode>
               <y:Realizers active="0">
                 <y:GroupNode>
-                  <y:Geometry height="1160.8254486490969" width="518.625" x="875.375" y="223.50928497314453"/>
+                  <y:Geometry height="1160.8254486490969" width="758.625" x="1794.1168770083104" y="105.78105450223075"/>
                   <y:Fill color="#CAECFF80" transparent="false"/>
                   <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="518.625" x="0.0" y="0.0">general</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="758.625" x="0.0" y="0.0">general</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -227,7 +227,7 @@
             <node id="n7::n0::n0" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="377.375" x="885.375" y="304.88574981689453"/>
+                  <y:Geometry height="104.0" width="377.375" x="1804.1168770083104" y="187.15751934598075"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="44.8544921875" x="166.26025390625" y="4.0">player</y:NodeLabel>
@@ -319,7 +319,7 @@
             <node id="n7::n0::n1" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="126.0" x="885.375" y="429.9533462524414"/>
+                  <y:Geometry height="104.0" width="126.0" x="1804.1168770083104" y="312.2251157815276"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.02197265625" x="38.489013671875" y="4.0">games</y:NodeLabel>
@@ -381,7 +381,7 @@
             <node id="n7::n0::n2" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="336.375" x="885.375" y="555.0209426879883"/>
+                  <y:Geometry height="104.0" width="336.375" x="1804.1168770083104" y="437.2927122170745"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.5439453125" x="139.91552734375" y="4.0">leagues</y:NodeLabel>
@@ -463,10 +463,10 @@
             <node id="n7::n0::n3" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="493.625" x="885.375" y="814.0885391235352"/>
+                  <y:Geometry height="104.0" width="733.625" x="1804.1168770083104" y="696.3603086526214"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.37646484375" x="198.124267578125" y="4.0">player_scores</y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.37646484375" x="318.124267578125" y="4.0">player_scores</y:NodeLabel>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
                       <y:RowNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
@@ -516,6 +516,20 @@
                       <y:ColumnNodeLabelModelParameter id="column_5" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.408203125" x="500.9208984375" y="33.0">standard_deviation<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_6" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="44.67578125" x="651.287109375" y="33.0">trueskill<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_7" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
                   <y:StyleProperties>
                     <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
                     <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
@@ -551,6 +565,12 @@
                       <y:Column id="column_2" minimumWidth="50.0" width="75.375">
                         <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
                       </y:Column>
+                      <y:Column id="column_6" minimumWidth="50.0" width="120.0">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_7" minimumWidth="50.0" width="120.0">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
                     </y:Columns>
                     <y:Rows>
                       <y:Row height="50.0" id="row_0" minimumHeight="50.0">
@@ -565,99 +585,7 @@
             <node id="n7::n0::n4" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="324.27259902685296" x="885.98708313413" y="1216.2400828801779"/>
-                  <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.21142578125" x="120.53058662280148" y="4.0">team_rating</y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
-                      <y:RowNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="14.0078125" x="41.99609375" y="33.0">Id<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.359375" x="77.09347478419659" y="33.0">Id_team<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_1" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.373046875" x="134.26755125041495" y="33.0">team_config<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_2" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="20.013671875" x="225.35498886993673" y="33.0">elo<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="53.359375" x="265.63752441714496" y="33.0">Id_match<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:StyleProperties>
-                    <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
-                    <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#c4d7ed"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.lang.String" name="yed.table.lane.style" value="lane.style.rows"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#c4d7ed"/>
-                  </y:StyleProperties>
-                  <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
-                  <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="1" leftF="1.375" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="50.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
-                    <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                    <y:DefaultRowInsets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                    <y:Insets bottom="0.0" left="0.0" right="0.0" top="30.0"/>
-                    <y:Columns>
-                      <y:Column id="column_0" minimumWidth="50.0" width="50.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_1" minimumWidth="50.0" width="53.546324568393175">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_2" minimumWidth="50.0" width="82.81550023904356">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_3" minimumWidth="50.0" width="50.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_4" minimumWidth="50.0" width="63.910774219416226">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                    </y:Columns>
-                    <y:Rows>
-                      <y:Row height="50.0" id="row_0" minimumHeight="50.0">
-                        <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                      </y:Row>
-                    </y:Rows>
-                  </y:Table>
-                </y:TableNode>
-              </data>
-              <graph edgedefault="directed" id="n7::n0::n4:"/>
-            </node>
-            <node id="n7::n0::n5" yfiles.foldertype="group">
-              <data key="d6">
-                <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="400.11413811420994" x="885.375" y="948.0885391235352"/>
+                  <y:Geometry height="104.0" width="400.11413811420994" x="1804.1168770083104" y="830.3603086526214"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="44.84716796875" x="177.63348507272985" y="4.0">teams</y:NodeLabel>
@@ -675,7 +603,7 @@
                       <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.38671875" x="283.40509061171997" y="33.0">creation_time_stamp<y:LabelModel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.38671875" x="254.86370968210485" y="33.0">creation_time_stamp<y:LabelModel>
                       <y:ColumnNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
                     <y:ModelParameter>
@@ -694,13 +622,6 @@
                     </y:LabelModel>
                     <y:ModelParameter>
                       <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.369140625" x="228.8568106171149" y="33.0">elo_total<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
                   <y:StyleProperties>
@@ -729,10 +650,7 @@
                       <y:Column id="column_3" minimumWidth="50.0" width="78.0">
                         <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
                       </y:Column>
-                      <y:Column id="column_4" minimumWidth="50.0" width="57.08276185922978">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_1" minimumWidth="50.0" width="118.03137625498016">
+                      <y:Column id="column_1" minimumWidth="50.0" width="175.11413811420994">
                         <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
                       </y:Column>
                     </y:Columns>
@@ -744,12 +662,12 @@
                   </y:Table>
                 </y:TableNode>
               </data>
-              <graph edgedefault="directed" id="n7::n0::n5:"/>
+              <graph edgedefault="directed" id="n7::n0::n4:"/>
             </node>
-            <node id="n7::n0::n6" yfiles.foldertype="group">
+            <node id="n7::n0::n5" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="344.0" x="885.375" y="684.5547409057617"/>
+                  <y:Geometry height="104.0" width="344.0" x="1804.1168770083104" y="566.8265104348479"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.3984375" x="115.80078125" y="4.0">league_member</y:NodeLabel>
@@ -826,12 +744,12 @@
                   </y:Table>
                 </y:TableNode>
               </data>
-              <graph edgedefault="directed" id="n7::n0::n6:"/>
+              <graph edgedefault="directed" id="n7::n0::n5:"/>
             </node>
-            <node id="n7::n0::n7" yfiles.foldertype="group">
+            <node id="n7::n0::n6" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="304.5591827357239" x="885.375" y="1082.0885391235352"/>
+                  <y:Geometry height="104.0" width="304.5591827357239" x="1804.1168770083104" y="964.3603086526214"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.20166015625" x="98.17876128973694" y="4.0">team_members</y:NodeLabel>
@@ -908,6 +826,108 @@
                   </y:Table>
                 </y:TableNode>
               </data>
+              <graph edgedefault="directed" id="n7::n0::n6:"/>
+            </node>
+            <node id="n7::n0::n7" yfiles.foldertype="group">
+              <data key="d6">
+                <y:TableNode configuration="YED_TABLE_NODE">
+                  <y:Geometry height="104.0" width="559.6924328218668" x="1804.7289601424404" y="1098.511852409264"/>
+                  <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.21142578125" x="238.24050352030827" y="4.0">team_rating</y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
+                      <y:RowNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="14.0078125" x="41.99609375" y="33.0">Id<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.359375" x="191.15148254042924" y="33.0">Id_team<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_1" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.373046875" x="273.14082327257574" y="33.0">team_config<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_2" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.408203125" x="352.5751402788055" y="33.0">standard_deviation<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="53.359375" x="91.94168424515237" y="33.0">Id_match<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="44.67578125" x="488.17001921244037" y="33.0">trueskill<y:LabelModel>
+                      <y:ColumnNodeLabelModel offset="3.0"/>
+                    </y:LabelModel>
+                    <y:ModelParameter>
+                      <y:ColumnNodeLabelModelParameter id="column_5" inside="true" verticalPosition="0.0"/>
+                    </y:ModelParameter>
+                  </y:NodeLabel>
+                  <y:StyleProperties>
+                    <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
+                    <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
+                    <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#c4d7ed"/>
+                    <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#abc8e2"/>
+                    <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#abc8e2"/>
+                    <y:Property class="java.lang.String" name="yed.table.lane.style" value="lane.style.rows"/>
+                    <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#c4d7ed"/>
+                  </y:StyleProperties>
+                  <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
+                  <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="1" leftF="1.375" right="0" rightF="0.0" top="0" topF="0.0"/>
+                  <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="50.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
+                    <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                    <y:DefaultRowInsets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
+                    <y:Insets bottom="0.0" left="0.0" right="0.0" top="30.0"/>
+                    <y:Columns>
+                      <y:Column id="column_0" minimumWidth="50.0" width="50.0">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_4" minimumWidth="50.0" width="89.24274349030452">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_1" minimumWidth="50.0" width="103.17685310024922">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_2" minimumWidth="50.0" width="82.81550023904356">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_3" minimumWidth="50.0" width="112.08829002341668">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                      <y:Column id="column_5" minimumWidth="50.0" width="98.36904596885279">
+                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+                      </y:Column>
+                    </y:Columns>
+                    <y:Rows>
+                      <y:Row height="50.0" id="row_0" minimumHeight="50.0">
+                        <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
+                      </y:Row>
+                    </y:Rows>
+                  </y:Table>
+                </y:TableNode>
+              </data>
               <graph edgedefault="directed" id="n7::n0::n7:"/>
             </node>
           </graph>
@@ -918,14 +938,14 @@
             <y:ProxyAutoBoundsNode>
               <y:Realizers active="0">
                 <y:GroupNode>
-                  <y:Geometry height="681.5037631855714" width="1023.8978570084885" x="875.375" y="1467.7891962931924"/>
+                  <y:Geometry height="681.503763185571" width="989.8889150066402" x="1794.1168770083104" y="1350.0609658222786"/>
                   <y:Fill color="#CAECFF80" transparent="false"/>
                   <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1023.8978570084885" x="0.0" y="0.0">2</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="989.8889150066402" x="0.0" y="0.0">2</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-                  <y:BorderInsets bottom="145" bottomF="144.69482303051996" left="6" leftF="5.612083134129989" right="98" rightF="98.0" top="0" topF="0.0"/>
+                  <y:BorderInsets bottom="411" bottomF="411.12729834182096" left="6" leftF="5.612083134129989" right="622" rightF="622.2369657370523" top="0" topF="0.0"/>
                 </y:GroupNode>
                 <y:GroupNode>
                   <y:Geometry height="58.30099868774414" width="131.0" x="870.375" y="948.0885391235352"/>
@@ -944,10 +964,10 @@
             <node id="n7::n1::n0" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="197.05300610889776" x="885.98708313413" y="1495.1656611369424"/>
+                  <y:Geometry height="104.0" width="197.05300610889776" x="1804.7289601424404" y="1377.4374306660286"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.20166015625" x="44.42567297632388" y="4.0">kicker_matches</y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.20166015625" x="44.42567297632377" y="4.0">kicker_matches</y:NodeLabel>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
                       <y:RowNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
@@ -1016,294 +1036,10 @@
             <node id="n7::n1::n1" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="910.2857738743585" x="885.98708313413" y="1618.3916266368203"/>
+                  <y:Geometry height="104.0" width="352.03986613545817" x="1804.7289601424404" y="1511.4374306660286"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.36669921875" x="408.95953732780436" y="4.0">kicker_player</y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
-                      <y:RowNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="53.365234375" x="34.3173828125" y="33.0">Id_player<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.369140625" x="288.17162323180264" y="33.0">elo_total<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_1" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.68359375" x="347.88939666930264" y="33.0">winstreak<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_2" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.017578125" x="418.96451416112814" y="33.0">lossstreak<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.716796875" x="110.1416015625" y="33.0">Id_league<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.732421875" x="495.7720582356633" y="33.0">Id_best_buddy<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_5" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.720703125" x="591.7828612494418" y="33.0">Id_worst_buddy<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_6" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.732421875" x="687.2849751015335" y="33.0">Id_strongest_enemy<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_7" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="107.39453125" x="802.3552121006205" y="33.0">Id_weakest_enemy<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_8" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="50.69921875" x="181.01204223681407" y="33.0">elo_front<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_9" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.03515625" x="232.70572509862814" y="33.0">elo_back<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_10" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:StyleProperties>
-                    <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
-                    <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#c4d7ed"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.lang.String" name="yed.table.lane.style" value="lane.style.rows"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#c4d7ed"/>
-                  </y:StyleProperties>
-                  <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
-                  <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="50.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
-                    <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                    <y:DefaultRowInsets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                    <y:Insets bottom="0.0" left="0.0" right="0.0" top="30.0"/>
-                    <y:Columns>
-                      <y:Column id="column_0" minimumWidth="50.0" width="74.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_4" minimumWidth="50.0" width="81.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_9" minimumWidth="50.0" width="54.723303223628136">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_10" minimumWidth="50.0" width="50.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_1" minimumWidth="50.0" width="58.26578064134924">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_2" minimumWidth="50.0" width="66.48421935865076">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_3" minimumWidth="50.0" width="79.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_5" minimumWidth="50.0" width="99.32993189907052">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_6" minimumWidth="50.0" width="98.67995537848606">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_7" minimumWidth="50.0" width="116.33599107569762">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_8" minimumWidth="50.0" width="108.46659229747615">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                    </y:Columns>
-                    <y:Rows>
-                      <y:Row height="50.0" id="row_0" minimumHeight="50.0">
-                        <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                      </y:Row>
-                    </y:Rows>
-                  </y:Table>
-                </y:TableNode>
-              </data>
-              <graph edgedefault="directed" id="n7::n1::n1:"/>
-            </node>
-            <node id="n7::n1::n2" yfiles.foldertype="group">
-              <data key="d6">
-                <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="876.2768318725102" x="885.98708313413" y="1745.7804081843667"/>
-                  <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.359375" x="391.9587284362551" y="4.0">kicker_teams</y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
-                      <y:RowNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:RowNodeLabelModelParameter horizontalPosition="0.0" id="row_0" inside="true"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="14.0078125" x="41.99609375" y="33.0">Id<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.720703125" x="162.58519212939905" y="33.0">elo_team_total<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_1" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="73.38671875" x="261.14438723854573" y="33.0">elo_team_12<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_2" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="73.38671875" x="347.7710018467792" y="33.0">elo_team_21<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.68359375" x="435.17590511703156" y="33.0">winstreak<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.017578125" x="503.722276010541" y="33.0">lossstreak<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_5" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.359375" x="90.8203125" y="33.0">Id_team<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_6" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="146.083984375" x="570.6869005083829" y="33.0">Id_strongest_enemy_team<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_7" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.74609375" x="728.2087403759961" y="33.0">Id_weakest_enemy_team<y:LabelModel>
-                      <y:ColumnNodeLabelModel offset="3.0"/>
-                    </y:LabelModel>
-                    <y:ModelParameter>
-                      <y:ColumnNodeLabelModelParameter id="column_8" inside="true" verticalPosition="0.0"/>
-                    </y:ModelParameter>
-                  </y:NodeLabel>
-                  <y:StyleProperties>
-                    <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
-                    <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#c4d7ed"/>
-                    <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#abc8e2"/>
-                    <y:Property class="java.lang.String" name="yed.table.lane.style" value="lane.style.rows"/>
-                    <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#c4d7ed"/>
-                  </y:StyleProperties>
-                  <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
-                  <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:BorderInsets bottom="0" bottomF="0.0" left="1" leftF="1.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-                  <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="50.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
-                    <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                    <y:DefaultRowInsets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                    <y:Insets bottom="0.0" left="0.0" right="0.0" top="30.0"/>
-                    <y:Columns>
-                      <y:Column id="column_0" minimumWidth="50.0" width="50.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_6" minimumWidth="50.0" width="81.0">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_1" minimumWidth="50.0" width="97.8910873837981">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_2" minimumWidth="50.0" width="89.89331845949528">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_3" minimumWidth="50.0" width="83.35991075697189">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_4" minimumWidth="50.0" width="72.74677078353284">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_5" minimumWidth="50.0" width="67.67995537848583">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_7" minimumWidth="50.0" width="154.31569986719796">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                      <y:Column id="column_8" minimumWidth="50.0" width="155.39008924302834">
-                        <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
-                      </y:Column>
-                    </y:Columns>
-                    <y:Rows>
-                      <y:Row height="50.0" id="row_0" minimumHeight="50.0">
-                        <y:Insets bottom="0.0" left="24.0" right="0.0" top="0.0"/>
-                      </y:Row>
-                    </y:Rows>
-                  </y:Table>
-                </y:TableNode>
-              </data>
-              <graph edgedefault="directed" id="n7::n1::n2:"/>
-            </node>
-            <node id="n7::n1::n3" yfiles.foldertype="group">
-              <data key="d6">
-                <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="352.03986613545817" x="885.98708313413" y="1895.5981364482438"/>
-                  <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
-                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.048828125" x="123.99551900522908" y="4.0">kicker_batches</y:NodeLabel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.048828125" x="123.9955190052292" y="4.0">kicker_batches</y:NodeLabel>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" rotationAngle="270.0" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.013671875" x="3.0" y="59.9931640625">Row 0<y:LabelModel>
                       <y:RowNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
@@ -1397,7 +1133,7 @@
                   </y:Table>
                 </y:TableNode>
               </data>
-              <graph edgedefault="directed" id="n7::n1::n3:"/>
+              <graph edgedefault="directed" id="n7::n1::n1:"/>
             </node>
           </graph>
         </node>
@@ -1407,10 +1143,10 @@
             <y:ProxyAutoBoundsNode>
               <y:Realizers active="0">
                 <y:GroupNode>
-                  <y:Geometry height="554.2082233428955" width="2542.399999999999" x="1935.673349269588" y="1467.7891962931924"/>
+                  <y:Geometry height="554.208223342895" width="2542.4" x="2854.4152262778985" y="1350.0609658222786"/>
                   <y:Fill color="#CAECFF80" transparent="false"/>
                   <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="2542.399999999999" x="0.0" y="0.0">2</y:NodeLabel>
+                  <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="2542.4" x="0.0" y="0.0">2</y:NodeLabel>
                   <y:Shape type="roundrectangle"/>
                   <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
                   <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
@@ -1433,7 +1169,7 @@
             <node id="n7::n2::n0" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="2434.3999999999996" x="1940.673349269588" y="1495.1656611369424"/>
+                  <y:Geometry height="104.0" width="2434.3999999999996" x="2859.4152262778985" y="1377.4374306660286"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.5341796875" x="1168.9329101562498" y="4.0">kicker_games</y:NodeLabel>
@@ -1507,21 +1243,21 @@
                       <y:ColumnNodeLabelModelParameter id="column_8" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.349609375" x="1306.3251953125" y="33.0">winner<y:LabelModel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="39.349609375" x="1306.3251953125005" y="33.0">winner<y:LabelModel>
                       <y:ColumnNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
                     <y:ModelParameter>
                       <y:ColumnNodeLabelModelParameter id="column_9" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="59.34765625" x="1390.326171875" y="33.0">timestamp<y:LabelModel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="59.34765625" x="1390.3261718750005" y="33.0">timestamp<y:LabelModel>
                       <y:ColumnNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
                     <y:ModelParameter>
                       <y:ColumnNodeLabelModelParameter id="column_10" inside="true" verticalPosition="0.0"/>
                     </y:ModelParameter>
                   </y:NodeLabel>
-                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.408203125" x="1490.2958984375" y="33.0">elo_change_team<y:LabelModel>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.408203125" x="1490.2958984375005" y="33.0">elo_change_team<y:LabelModel>
                       <y:ColumnNodeLabelModel offset="3.0"/>
                     </y:LabelModel>
                     <y:ModelParameter>
@@ -1645,7 +1381,7 @@
             <node id="n7::n2::n1" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="692.75" x="1940.673349269588" y="1618.3916266368203"/>
+                  <y:Geometry height="104.0" width="692.75" x="2859.4152262778985" y="1500.6633961659065"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.36669921875" x="300.191650390625" y="4.0">kicker_player</y:NodeLabel>
@@ -1747,7 +1483,7 @@
             <node id="n7::n2::n2" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="1249.0" x="1940.673349269588" y="1759.8435576365762"/>
+                  <y:Geometry height="104.0" width="1249.0" x="2859.4152262778985" y="1642.1153271656622"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="92.359375" x="578.3203125" y="4.0">kicker_teams</y:NodeLabel>
@@ -1889,7 +1625,7 @@
             <node id="n7::n2::n3" yfiles.foldertype="group">
               <data key="d6">
                 <y:TableNode configuration="YED_TABLE_NODE">
-                  <y:Geometry height="104.0" width="224.0" x="1940.673349269588" y="1901.295488636332"/>
+                  <y:Geometry height="104.0" width="224.0" x="2859.4152262778985" y="1783.5672581654178"/>
                   <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
                   <y:BorderStyle color="#000000" type="line" width="1.0"/>
                   <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.048828125" x="59.9755859375" y="4.0">kicker_batches</y:NodeLabel>
@@ -1951,6 +1687,23 @@
           </graph>
         </node>
       </graph>
+    </node>
+    <node id="n8">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1718.717606648198" y="1908.8673274238201"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="17.34765625" x="6.326171875" y="5.6494140625">28<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
     </node>
     <edge id="e0" source="n0" target="n1">
       <data key="d10">
