@@ -1,8 +1,8 @@
 <?
-$DBUSER 	= "ch_warn_adm"; 
-$DBPW 		= "R4TYDEbo8WDZ0su2"; 
+$DBUSER 	= "test"; 
+$DBPW 		= "1234"; 
 //$DBHOST 	= "78.46.160.25";
 $DBHOST		= "localhost";
 $DBPORT 	= "3306"; 
-$DBNAME		= "ch_warn_adm"; 
+$DBNAME		= "kicker"; 
 ?>
