@@ -52,7 +52,7 @@ while ($row = mysqli_fetch_row($test)) {
 
 
 
-//$csv_output=$Id_matches[3];
+$csv_output=$Id_matches[3];
 
 $numberOfRows = mysqli_num_rows($GetIdlastfivematches);
 // if ($numberOfRows > 0) {

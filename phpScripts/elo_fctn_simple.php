@@ -22,9 +22,9 @@ else {
 	$k=15;
 }
 
-$delta_elo_A = $k * ($S_A - $E_A);
+$delta_elo_A = round($k * ($S_A - $E_A));
 
-$delta_elo_B = $k * ($S_B - $E_B);
+$delta_elo_B = round($k * ($S_B - $E_B));
 
 $elo_A_new=$elo_A_old + $delta_elo_A;
 
