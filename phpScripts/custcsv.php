@@ -28,9 +28,10 @@ while ($rowr = mysqli_fetch_row($values)) {
  for ($j=0;$j<$numberOfRows;$j++) {
   $csv_output .= $rowr[$j].", ";
  }
+ $csv_output = substr($csv_output, 0, -2);
  $csv_output .= "\n";
 }
-
+$csv_output = substr($csv_output, 0, -1);
 }
 
 //$csv_output = substr($csv_output, 0, -2);
