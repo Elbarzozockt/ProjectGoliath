@@ -2,6 +2,7 @@
 
 include ("db_connect.inc.php");
 include ("trueskill_fctn_graph.php");
+include ("Createteam.php");
 
 date_default_timezone_set('Europe/Berlin');
 
@@ -109,6 +110,95 @@ if(mysqli_num_rows($checkplayer_result) == 4)
 			// print $playerlist[$iminuseins][0] ;
 		}
 	}
+	
+	$Id_team1=createteam($playerlist[0][0], $playerlist[1][0], $dbc, $creation_time_stamp);
+	$Id_team2=createteam($playerlist[2][0], $playerlist[3][0], $dbc, $creation_time_stamp);
+	
+	Print $Id_team1;
+	Print "Next";
+	Print $Id_team2;
+	
+	if($playerlist[0][0]<$playerlist[1][0]){
+		$Id_team1_config=1;
+	}else{
+		$Id_team1_config=2;
+	}
+	
+	if($playerlist[2][0]<$playerlist[3][0]){
+		$Id_team2_config=1;
+	}else{
+		$Id_team2_config=2;
+	}
+	if($Id_team1<$Id_team2){
+		$teams= array(
+			array($Id_team1, $Id_team1_config),
+			array($Id_team2, $Id_team2_config)
+		);
+	}else{
+		$teams= array(
+			array($Id_team2, $Id_team2_config),
+			array($Id_team1, $Id_team1_config)
+		);
+	}
+	
+	// $getTeamvalues = "SELECT Id_team AS testIdteam, 
+						// Id_team_config AS testIdteamconfig,
+						// coalesce((SELECT team_rating.standard_deviation FROM team_rating 
+									// WHERE team_rating.Id_match < '$Id_match' AND (Id_team_config=testIdteamconfig) AND team_rating.Id_team=testIdteam 
+									// ORDER BY team_rating.Id DESC LIMIT 1), 50) AS Standarddev,
+						// coalesce((SELECT team_rating.trueskill FROM team_rating 
+									// WHERE team_rating.Id_match < '$Id_match' AND (Id_team_config=testIdteamconfig) AND team_rating.Id_team=testIdteam 
+									// ORDER BY team_rating.Id DESC LIMIT 1), 1200) AS TSteam
+						// FROM team_rating WHERE ((Id_team='".$teams[0][0]."' AND Id_team_config='".$teams[0][1]."')OR (Id_team='".$teams[1][0]."' AND Id_team_config='".$teams[1][1]."')) GROUP BY Id_team ORDER BY team_rating.Id_team";
+	// $teamvaluesresult =mysqli_query($dbc, $getTeamvalues);
+	
+	
+	//Teamdaten aus DB suchen
+	$teamtemp=array();
+	for($i=0; $i<2; $i++){
+		
+			$getTeamvalues = "SELECT Id_team AS testIdteam, 
+						Id_team_config AS testIdteamconfig,
+						coalesce((SELECT team_rating.standard_deviation FROM team_rating 
+									WHERE team_rating.Id_match < '$Id_match' AND (Id_team_config=testIdteamconfig) AND team_rating.Id_team=testIdteam 
+									ORDER BY team_rating.Id DESC LIMIT 1), 50) AS Standarddev,
+						coalesce((SELECT team_rating.trueskill FROM team_rating 
+									WHERE team_rating.Id_match < '$Id_match' AND (Id_team_config=testIdteamconfig) AND team_rating.Id_team=testIdteam 
+									ORDER BY team_rating.Id DESC LIMIT 1), 1200) AS TSteam
+						FROM team_rating WHERE ((Id_team='".$teams[$i][0]."' AND Id_team_config='".$teams[$i][1]."')) GROUP BY Id_team ORDER BY team_rating.Id_team";
+
+	$teamvaluesresult =mysqli_query($dbc, $getTeamvalues);
+	if(mysqli_num_rows($teamvaluesresult)==1){
+		$teamtemp[]=mysqli_fetch_row($teamvaluesresult);
+	}else{
+		$teamtemp[$i][]=$teams[$i][0];
+		$teamtemp[$i][]=$teams[$i][1];
+		$teamtemp[$i][]=50;
+		$teamtemp[$i][]=1200;
+	}
+}
+	
+	
+	$teamlistForTrueskill = array(
+		array($teamtemp[0][0], $teamtemp[0][3], $teamtemp[0][2]),
+		array($teamtemp[1][0], $teamtemp[1][3], $teamtemp[1][2])
+	);
+	
+	//Print $teamtemp[0][0];
+	//Print $teamtemp[1];
+
+	
+	$result_team=calculate_trueskill_1vs1($teamlistForTrueskill, $RanksScore);
+	
+	for($k=0; $k<2; $k++){
+		if($result_team[$k][0]==$teams[$k][0]){
+		$CreatRatingInsertquerry="INSERT INTO team_rating (Id_match, Id_team, Id_team_config, standard_deviation, trueskill) VALUES('$Id_match', '".$teams[$k][0]."', '".$teams[$k][1]."', '".$result_team[$k][2]."', '".$result_team[$k][1]."')";
+		$CreatRatingInsert =mysqli_query($dbc, $CreatRatingInsertquerry);
+		}else{
+		Print "IDs stimmen nicht überein.";
+		}
+	}
+	
 	print "Match wurde eingetragen";
 }else{
 	print $debu." Spieler nicht registriert! Spiel wurde nicht gewertet.";
@@ -117,24 +207,7 @@ if(mysqli_num_rows($checkplayer_result) == 4)
 
 mysqli_close($dbc);
 
-//funktion zum Erstellen eines Teams falls nicht vorhanden
-function createteam($playerOne, $playerTwo){
-$teamname="Ludolfs";
-$teamexistsquerry = "SELECT Id_team from team_member Inner Join player ON player.Id=team_member.Id_player WHERE player.name='$playerOne' OR player.name='$playerTwo' group by Id_team having count(*) >1";
-$teamexistsresult =mysql_query($dbc, $teamexistsquerry);
-If(mysqli_num_rows($teamexistsresult)<1){
-	
-	$createteamquery="INSERT INTO teams (name, Id_league) VALUES ('$teamname', '$Id_league')";
-	$resultcreateteam = mysqli_query($dbc, $createteamquery) or trigger_error("Query MySQL Error: " . mysqli_error($dbc));
-	$Id_new_team = mysqli_insert_id($dbc);
-	
 
-	$createteamquery="INSERT INTO team_member (Id_team, Id_player) SELECT '$Id_new_team', player.Id FROM player WHERE player.name='$playerOne')";
-	$resultcreateteam = mysqli_query($dbc, $createteamquery) or trigger_error("Query MySQL Error: " . mysqli_error($dbc));
-	
-	$createteamquery="INSERT INTO team_member (Id_team, Id_player) SELECT '$Id_new_team', player.Id FROM player WHERE player.name='$playerTwo')";
-	$resultcreateteam = mysqli_query($dbc, $createteamquery) or trigger_error("Query MySQL Error: " . mysqli_error($dbc));
-}
-}
+
  
 ?>
