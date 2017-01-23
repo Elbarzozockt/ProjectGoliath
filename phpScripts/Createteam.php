@@ -8,7 +8,7 @@ $Id_league=1;
 $teamexistsquerry = "SELECT Id_team from team_member Inner Join player ON player.Id=team_member.Id_player WHERE player.Id='$playerOne' OR player.Id='$playerTwo' group by Id_team having count(*) >1";
 $teamexistsresult =mysqli_query($dbc, $teamexistsquerry);
 If(mysqli_num_rows($teamexistsresult)<1){
-	Print  $matchtime;
+	//Print  $matchtime;
 	$createteamquery="INSERT INTO teams (name, Id_league, creation_time_stamp) VALUES ('$teamname', '$Id_league', '$matchtime')";
 	$resultcreateteam = mysqli_query($dbc, $createteamquery) or trigger_error("Query MySQL Error: " . mysqli_error($dbc));
 	$Id_new_team = mysqli_insert_id($dbc);

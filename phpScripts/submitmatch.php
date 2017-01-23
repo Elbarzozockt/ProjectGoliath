@@ -114,9 +114,9 @@ if(mysqli_num_rows($checkplayer_result) == 4)
 	$Id_team1=createteam($playerlist[0][0], $playerlist[1][0], $dbc, $creation_time_stamp);
 	$Id_team2=createteam($playerlist[2][0], $playerlist[3][0], $dbc, $creation_time_stamp);
 	
-	Print $Id_team1;
-	Print "Next";
-	Print $Id_team2;
+	//Print $Id_team1;
+	//Print "Next";
+	//Print $Id_team2;
 	
 	if($playerlist[0][0]<$playerlist[1][0]){
 		$Id_team1_config=1;

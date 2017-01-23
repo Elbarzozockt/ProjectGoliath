@@ -101,7 +101,7 @@ $currentmatchquerry = mysqli_query($dbc, "SELECT Id_player AS testidplayer, posi
 		
 		if(mysqli_num_rows($checkteamratingquerry)<2){
 			for($k=0; $k<2; $k++){
-			PRINT $teams[$k][0];
+			//PRINT $teams[$k][0];
 			$CreatRatingInsertquerry="INSERT INTO team_rating (Id_match, Id_team, Id_team_config) VALUES('$u', '".$teams[$k][0]."', '".$teams[$k][1]."')";
 			$CreatRatingInsert =mysqli_query($dbc, $CreatRatingInsertquerry);
 			}
