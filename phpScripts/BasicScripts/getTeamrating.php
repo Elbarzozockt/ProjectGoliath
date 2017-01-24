@@ -1,29 +1,10 @@
 <?php
 
-include ("./db_connect.inc.php");
- 
-$dbc = mysqli_connect($DBHOST,$DBUSER,$DBPW,$DBNAME,$DBPORT);
-if (!$dbc) {
-    die("Database connection failed: " . mysqli_error($dbc));
-    exit();
-}
-
-//$OrderBy = mysqli_real_escape_string($dbc, $_GET['OrderBy']);
-
-//$numberOfRows = 1;
-// if ($numberOfRows > 0) {
-// $values = mysqli_query($dbc, "SELECT name FROM player");
-// while ($rowr = mysqli_fetch_row($values)) {
- // for ($j=0;$j<$numberOfRows;$j++) {
-  // $csv_output .= $rowr[$j];
- // }
- // $csv_output .= "\n";
-// }
-// }
-$csv_output .= "trueskill, PlayerFront, PlayerBack \n";
-//$result = mysqli_query($dbc, "SHOW COLUMNS FROM player");
-$numberOfRows = 3;//IdTeam, IdTeamConfig, //mintr.IDT2, mintr.TC2, 
-if ($numberOfRows > 0) {
+ function getTeamrating($dbc){
+	 
+	 $numberOfRows = 3;//IdTeam, IdTeamConfig, //mintr.IDT2, mintr.TC2, 
+	 
+	if ($numberOfRows > 0) {
 		$values = mysqli_query($dbc, "SELECT mintr.trueskill, IF(mintr.TC2='1', tname2.minpl, tname.maxpl) AS pFront, IF(mintr.TC2='2', tname2.minpl, tname.maxpl) AS pBack
 										FROM(SELECT tr.Id_team, tr.Id_team_config, MAX(km.timestamp) as MaxTime
 												FROM team_rating AS tr
@@ -48,19 +29,9 @@ if ($numberOfRows > 0) {
 												) AS tname2 ON tname2.IDT4=mintr.IDT2
 										GROUP BY mintr.IDT2, mintr.TC2
 										ORDER BY mintr.trueskill DESC");
-while ($rowr = mysqli_fetch_row($values)) {
- for ($j=0;$j<$numberOfRows;$j++) {
-  $csv_output .= $rowr[$j].", ";
- }
- $csv_output = substr($csv_output, 0, -2);
- $csv_output .= "\n";
-}
-$csv_output = substr($csv_output, 0, -1);
-
+	}
+	 
+return array($values, $numberOfRows);
 }
 
-//$csv_output = substr($csv_output, 0, -2);
-
-print $csv_output;
-exit;
 ?>

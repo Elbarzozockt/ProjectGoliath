@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="author" content="http://puravidaapps.com">
+
+  <title>Sortable</title>
+  <link href="jquery-ui.css" rel="stylesheet">                <!-- http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css -->
+  <link href="ui-lightness-jquery-ui.css" rel="stylesheet">   <!-- http://code.jquery.com/ui/1.8.21/themes/ui-lightness/jquery-ui.css -->
+
+  <!-- Thank you furf for the jQuery UI Touch Punch library, http://touchpunch.furf.com -->
+  <script src="jquery-1.7.2.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="jquery.ui.touch-punch.min.js"></script>
+
+  <style>
+    body { background:#fff; font-family:Helvetica,Arial,sans-serif; }
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 80%; }
+    #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+    #sortable li span { position: absolute; margin-left: -1.3em; }
+    .ui-state-default { color: black; }
+  </style>
+
+   <script>
+   function urldecode(str) {
+     return decodeURIComponent((str+'').replace(/\+/g, '%20'));
+   }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="demo">
+      <ul id="sortable"></ul>
+    </div>
+
+    <script>
+    $(function() {
+      $( "#sortable" ).sortable({
+        update: function(event, ui) {
+          // http://stackoverflow.com/a/12443467/1545993
+          // http://stackoverflow.com/a/3230960/1545993
+          resultArray = $("#sortable").sortable("toArray");
+          //alert(resultArray[0]);
+
+          // generate new list
+          var csvNewList = "";
+          for(i=0;i<resultArray.length;i++){
+            // replace underscore back to space
+            csvNewList += resultArray[i].replace(/_/g,' ') + ",";
+          }
+
+          // remove the last comma and print the new list to the page title
+          window.document.title = csvNewList.substr(0, csvNewList.length - 1);
+        }
+      });
+      $( "#sortable" ).disableSelection();
+    });
+
+    $(document).ready(function() {
+      // get the table to display from the window.AppInventor object
+      var urlArray = window.AppInventor.getWebViewString();
+
+      // remove all the %22 (") and split at %2C (comma)
+      var theList = urlArray.replace(/%22/g,'').split("%2C");
+
+      // build the listview, for the id: replace space by underscore
+      $.each( theList, function(index, value){
+        $("#sortable").append("<li id=" + urldecode(value).replace(/ /g,'_')+ " class='ui-state-default'><span class='ui-icon ui-icon-arrowthick-2-n-s'></span>" + urldecode(value)+ "</li>");
+      });
+    });
+    </script>
+
+  </div>
+</body>
+</html>

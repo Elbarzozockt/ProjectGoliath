@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kicker Main</title>
+<!-- <link rel="stylesheet" href="testtheme.min.css" /> -->
+<!-- <link rel="stylesheet" href="jquery.mobile.icons.min.css" /> -->
+<!-- <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" /> -->
+<!-- <script src="jquery-1.11.1.min.js"></script> -->
+<!-- <script src="jquery.mobile-1.4.5.min.js"></script> -->
+
+	<link rel="stylesheet" href="testtheme.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<div data-role="content" data-theme="a">
+	<button type="button" onclick="myFunction()">Switch To Main</button>
+	<!-- <script> -->
+	<!-- document.write("This is a Heading moep"+window.AppInventor.getWebViewString()); -->
+	<!-- </script> -->
+	<script>
+	function myFunction(){
+	window.AppInventor.setWebViewString("SwitchToScreen1");
+	<!-- document.write("This is a Heading moep"+window.AppInventor.getWebViewString()); -->
+	<!-- <p>This is a paragraph.</p> -->
+	<!-- window.AppInventor.setWebViewString("SwitchToScreen1"); -->
+	}
+	</script>
+	<div>
+	<table data-role="table" class="ui-responsive ui-shadow">
+      <thead>
+        <tr>
+          <th>CustomerID</th>
+          <th>CustomerName</th>
+          <th>ContactName</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>PostalCode</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Antonio Moreno Taquería</td>
+          <td>Antonio Moreno</td>
+          <td>Mataderos 2312</td>
+          <td>México D.F.</td>
+          <td>05023</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Around the Horn</td>
+          <td>Thomas Hardy</td>
+          <td>120 Hanover Sq.</td>
+          <td>London</td>
+          <td>WA1 1DP</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Berguvsvägen 8</td>
+          <td>Luleå</td>
+          <td>S-958 22</td>
+          <td>Sweden</td>
+        </tr>
+      </tbody>
+    </table>
+	</div>
+	
+	<div>
+	 <?php include ("./test.php"); ?>
+	</div>
+</div>
+
+    <!-- document.write("The value from the app is<br />" + window.AppInventor.getWebViewString()); -->
+    <!-- window.AppInventor.setWebViewString("hello from Javascript") -->
+
+	
+</body>
+</html>
