@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#5a5a5b">
+<div data-role="content" data-theme="a">
+	<!-- <button type="button" onclick="myFunction()">Switch To Main</button> -->
+	<!-- <script> -->
+	<!-- function myFunction(){ -->
+	<!-- window.AppInventor.setWebViewString("SwitchToScreen1"); -->
+	<!-- } -->
+	<!-- </script> -->
+	<div>
+	<table data-role="table" class="ui-responsive">
+      <thead class="ui-widget-header">
+		<?php echo($tablehead); ?>
+      </thead>
+      <tbody class="ui-widget-content">
+		<?php echo($tablebody); ?>
+      </tbody>
+    </table>
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			$("player").click(function(){
+				var str = $(this).text();
+				window.AppInventor.setWebViewString(str);
+				<!-- alert(str); -->
+			});
+		});
+	</script>
+	
+</div>
+
+    <!-- document.write("The value from the app is<br />" + window.AppInventor.getWebViewString()); -->
+    <!-- window.AppInventor.setWebViewString("hello from Javascript") -->
+
+	
+</body>
+</html>
