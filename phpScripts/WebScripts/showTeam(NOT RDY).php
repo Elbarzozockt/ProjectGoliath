@@ -1,7 +1,7 @@
 <?php
 
 include ("../BasicScripts/db_connect.inc.php");
-include ("../BasicScripts/getRating.php");
+//include ("../BasicScripts/getteam.php");
 
 include ("../WebScripts/header.html");
 
@@ -12,13 +12,13 @@ if (!$dbc) {
     exit();
 }
 
-$OrderBy = mysqli_real_escape_string($dbc, $_GET['OrderBy']);
+$teamname = mysqli_real_escape_string($dbc, $_GET['teamname']);
 
-$result = getRating($dbc, $OrderBy);
+$result = getteam($dbc, $teamname);
 
 $values=$result[0];
 
-$tablehead="<tr> <td>Platz</td> <td>Name</td> <td><a href=\"getRatingweb.php?OrderBy=Front\">Sturm</a></td> <td><a href=\"getRatingweb.php?OrderBy=Back\">Verteidigung</a></td> <td><a href=\"getRatingweb.php\">Gesamt</a></td> </tr>";
+$tablehead="<tr><td>Platz</td> <td>Name</td> <td><a href=\"getRatingweb.php?OrderBy=Front\">Sturm</a></td> <td><a href=\"getRatingweb.php?OrderBy=Back\">Verteidigung</a></td> <td><a href=\"getRatingweb.php\">Gesamt</a></td> </tr>";
 
 $tablebody="";
 
@@ -37,6 +37,6 @@ $Rank=1;
 		$tablebody .= "</tr>";
 	}
 
-	include ("../WebScripts/bodyRatingtable.html");
+	include ("../WebScripts/body.html");
 
 ?>

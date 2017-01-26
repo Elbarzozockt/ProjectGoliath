@@ -1,7 +1,7 @@
 <?php
 
 include ("../BasicScripts/db_connect.inc.php");
-include ("../BasicScripts/getRating.php");
+include ("../BasicScripts/getTeamrating.php");
 
 include ("../WebScripts/header.html");
 
@@ -12,13 +12,13 @@ if (!$dbc) {
     exit();
 }
 
-$OrderBy = mysqli_real_escape_string($dbc, $_GET['OrderBy']);
-
-$result = getRating($dbc, $OrderBy);
+$result = getTeamrating($dbc);
 
 $values=$result[0];
 
-$tablehead="<tr> <td>Platz</td> <td>Name</td> <td><a href=\"getRatingweb.php?OrderBy=Front\">Sturm</a></td> <td><a href=\"getRatingweb.php?OrderBy=Back\">Verteidigung</a></td> <td><a href=\"getRatingweb.php\">Gesamt</a></td> </tr>";
+$numberOfRows=$result[1];
+
+$tablehead="<tr> <td>Platz</td><td>Teamname</td><td>Trueskill</td> <td>Player Front</td> <td>Player Back</td></tr>";
 
 $tablebody="";
 
@@ -28,7 +28,7 @@ $Rank=1;
 		$tablebody .= "<tr> <td>".$Rank."</td>";
 		$Rank++;
 		for ($j=0;$j<$numberOfRows;$j++) {
-			if($j==0){
+			if($j==2 OR $j==3){
 				$tablebody .= "<td><player>".$rowr[$j]."</player></td>";
 			}else{
 			$tablebody .= "<td>".$rowr[$j]."</td>";

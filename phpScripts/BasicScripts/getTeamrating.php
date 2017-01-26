@@ -2,10 +2,10 @@
 
  function getTeamrating($dbc){
 	 
-	 $numberOfRows = 3;//IdTeam, IdTeamConfig, //mintr.IDT2, mintr.TC2, 
+	 $numberOfRows = 4;//IdTeam, IdTeamConfig, //mintr.IDT2, mintr.TC2, 
 	 
 	if ($numberOfRows > 0) {
-		$values = mysqli_query($dbc, "SELECT mintr.trueskill, IF(mintr.TC2='1', tname2.minpl, tname.maxpl) AS pFront, IF(mintr.TC2='2', tname2.minpl, tname.maxpl) AS pBack
+		$values = mysqli_query($dbc, "SELECT ts.name, mintr.trueskill, IF(mintr.TC2='1', tname2.minpl, tname.maxpl) AS pFront, IF(mintr.TC2='2', tname2.minpl, tname.maxpl) AS pBack
 										FROM(SELECT tr.Id_team, tr.Id_team_config, MAX(km.timestamp) as MaxTime
 												FROM team_rating AS tr
 												INNER JOIN kicker_matches AS km ON km.Id=tr.Id_match
@@ -27,6 +27,7 @@
 												INNER JOIN (SELECT Id_team, MIN(Id_player) AS minplayer FROM team_member GROUP BY Id_team ) AS tm4 ON tm4.minplayer=pl4.Id
 												GROUP BY IDT4
 												) AS tname2 ON tname2.IDT4=mintr.IDT2
+										INNER JOIN teams AS ts ON ts.Id=mintr.IDT2 
 										GROUP BY mintr.IDT2, mintr.TC2
 										ORDER BY mintr.trueskill DESC");
 	}
