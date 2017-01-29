@@ -3,18 +3,14 @@
 <body bgcolor="#5a5a5b">
 <div data-role="content" data-theme="a">
 	
-	<form action="getRatingweb.php">
-    <input type="submit" value="SOLO Ranking" />
-	</form>
-	<form action="getTeamratingweb.php">
-    <input type="submit" value="Team Ranking" />
-	</form>
-	<!-- <script> -->
-	<!-- function myFunction(){ -->
-	<!-- window.AppInventor.setWebViewString("SwitchToScreen1"); -->
-	<!-- } -->
-	<!-- </script> -->
-	
+		<ul>
+			<li><a href="../index.html">Main</a></li>
+			<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
+			<li><a href="../WebScripts/getTeamratingweb.php">Team Rating</a></li>
+			<!-- <li><a href="../WebScripts/showAccountweb.php">Spieler Info</a></li> -->
+			<!-- <li><a href="../WebScripts/ChartData.php">AREA 51</a></li> -->
+		</ul>
+
 	<div>
 	<table data-role="table" class="ui-responsive">
       <thead class="ui-widget-header">
@@ -30,17 +26,12 @@
 		$(document).ready(function(){
 			$("player").click(function(){
 				var str = $(this).text();
-				window.AppInventor.setWebViewString(str);
-				<!-- alert(str); -->
+				window.location.href="../WebScripts/ChartData.php?accname="+str;
+				<!-- window.AppInventor.setWebViewString(str); -->
 			});
 		});
 	</script>
 	
 </div>
-
-    <!-- document.write("The value from the app is<br />" + window.AppInventor.getWebViewString()); -->
-    <!-- window.AppInventor.setWebViewString("hello from Javascript") -->
-
-	
 </body>
 </html>
