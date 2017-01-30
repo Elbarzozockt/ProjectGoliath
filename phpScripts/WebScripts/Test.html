@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../jquery/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="../jquery/jquery-ui.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="../jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	 
+		<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
+		li {
+			float:left;
+		}
+		li a {
+			display:block;
+			color:white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111111;
+		}
+		</style>
+		
+		
+		
+	</head>
+	<body style="padding: 0; margin:0; background-color:grey; color: white;">
+	
+		<ul>
+			<li><a href="../index.html">Main</a></li>
+			<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
+			<li><a href="../WebScripts/getTeamratingweb.php">Team Rating</a></li>
+			<!-- <li><a href="../WebScripts/showAccountweb.php">Spieler Info</a></li> -->
+			<!-- <li><a href="../WebScripts/ChartData.php">AREA 51</a></li> -->
+		</ul>
+		<div>
+			<div style="background-color:grey; color: white; width:300px; margin:0px;">
+				<p> Name: <?php echo($playername); ?> </p>
+				<p> Trueskill Sturm: <?php echo($trueskillfront); ?> </p>
+				<p> Trueskill Verteidigung: <?php echo($trueskillback); ?> </p>
+				<p> Trueskill Gesamt: <?php echo((($trueskillback+$trueskillfront)/2)); ?> </p>
+				<p> Spiele Sturm: <?php echo($gamesFront); ?> (<?php echo(round($winFront*100/$gamesFront)); ?>% Siegrate)</p>
+				<p> Spiele Verteidigung: <?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)</p>
+				<p> Spiele Gesamt: <?php echo(($gamesFront+$gamesBack)); ?> (<?php echo(round(($winBack+$winFront)*100/($gamesFront+$gamesBack))); ?>% Siegrate)</p>
+			</div>
+			
+			<div style="background-color: white;"> 
+				 <!-- float: left; -->
+			<canvas id="myChart" width="400" height="200"></canvas>
+			<script>
+			var ctx = document.getElementById("myChart");
+			var myChart = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: <?php echo($xDataFromPHPF); ?>,
+					datasets: [
+						{
+							label: "Trueskill Sturm",
+							fill: false,
+							lineTension: 0.1,
+							backgroundColor: "rgba(75,192,192,0.4)",
+							borderColor: "rgba(75,192,192,1)",
+							borderCapStyle: 'butt',
+							borderDash: [],
+							borderDashOffset: 0.0,
+							borderJoinStyle: 'miter',
+							pointBorderColor: "rgba(75,192,192,1)",
+							pointBackgroundColor: "#fff",
+							pointBorderWidth: 1,
+							pointHoverRadius: 5,
+							pointHoverBackgroundColor: "rgba(75,192,192,1)",
+							pointHoverBorderColor: "rgba(220,220,220,1)",
+							pointHoverBorderWidth: 2,
+							pointRadius: 1,
+							pointHitRadius: 10,
+							data: <?php echo($yDataFromPHPF); ?>,
+							spanGaps: false,
+						}
+					]
+				},
+				options: {
+					responsive:false,
+					maintainAspectRatio:false,
+					scales: {
+						xAxes: [{
+							ticks: {
+							    autoSkip:true,
+								maxTicksLimit:20,
+								beginAtZero:true
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								beginAtZero:false
+							}
+						}]
+					}
+				}
+			});
+			</script>
+			</div>
+			
+			<div style="background-color: white;">
+				
+			<canvas id="myChartFront" width="400" height="200"></canvas>
+			<script>
+			var ctx = document.getElementById("myChartFront");
+			var myChartFront = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: <?php echo($xDataFromPHPB); ?>,
+					datasets: [
+						{
+							label: "Trueskill Verteidigung",
+							fill: false,
+							lineTension: 0.1,
+							backgroundColor: "rgba(75,192,192,0.4)",
+							borderColor: "rgba(75,192,192,1)",
+							borderCapStyle: 'butt',
+							borderDash: [],
+							borderDashOffset: 0.0,
+							borderJoinStyle: 'miter',
+							pointBorderColor: "rgba(75,192,192,1)",
+							pointBackgroundColor: "#fff",
+							pointBorderWidth: 1,
+							pointHoverRadius: 5,
+							pointHoverBackgroundColor: "rgba(75,192,192,1)",
+							pointHoverBorderColor: "rgba(220,220,220,1)",
+							pointHoverBorderWidth: 2,
+							pointRadius: 1,
+							pointHitRadius: 10,
+							data: <?php echo($yDataFromPHPB); ?>,
+							spanGaps: false,
+						}
+					]
+				},
+				options: {
+					responsive:false,
+					maintainAspectRatio:false,
+					scales: {
+						xAxes: [{
+							ticks: {
+							    autoSkip:true,
+								maxTicksLimit:20,
+								beginAtZero:true
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								beginAtZero:false
+							}
+						}]
+					}
+				}
+			});
+			</script>
+			</div>
+			
+		</div>
+	</body>
+</html>

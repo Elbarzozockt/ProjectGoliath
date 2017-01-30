@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#5a5a5b">
+<div data-role="content" data-theme="a">
+	
+		<ul>
+			<li><a href="../index.html">Main</a></li>
+			<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
+			<li><a href="../WebScripts/getTeamratingweb.php">Team Rating</a></li>
+			<!-- <li><a href="../WebScripts/showAccountweb.php">Spieler Info</a></li> -->
+			<!-- <li><a href="../WebScripts/ChartData.php">AREA 51</a></li> -->
+		</ul>
+
+	<div>
+	<table data-role="table" class="ui-responsive">
+      <thead class="ui-widget-header">
+		<?php echo($tablehead); ?>
+      </thead>
+      <tbody class="ui-widget-content">
+		<?php echo($tablebody); ?>
+      </tbody>
+    </table>
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			$("player").click(function(){
+				var str = $(this).text();
+				window.location.href="../WebScripts/ChartData.php?accname="+str;
+				<!-- window.AppInventor.setWebViewString(str); -->
+			});
+		});
+	</script>
+	
+</div>
+</body>
+</html>
