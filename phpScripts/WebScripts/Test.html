@@ -30,13 +30,30 @@
 		li a:hover {
 			background-color: #111111;
 		}
+		
+		.flex-container {
+		display: -webkit-flex;
+		display: flex;
+		width: auto;
+		height: auto;
+		background-color: lightgrey;
+		}
+		
+		.flex-item {
+		background-color:cornflowerblue;
+		width: auto;
+		height: auto;
+		margin: 5px;
+		}
+		
+		
 		</style>
 		
-		
-		
 	</head>
-	<body style="padding: 0; margin:0; background-color:grey; color: white;">
 	
+	<body style="padding: 0; margin:0; background-color:grey; color: white; width:650px">
+		
+
 		<ul>
 			<li><a href="../index.html">Main</a></li>
 			<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
@@ -44,20 +61,56 @@
 			<!-- <li><a href="../WebScripts/showAccountweb.php">Spieler Info</a></li> -->
 			<!-- <li><a href="../WebScripts/ChartData.php">AREA 51</a></li> -->
 		</ul>
-		<div>
-			<div style="background-color:grey; color: white; width:300px; margin:0px;">
-				<p> Name: <?php echo($playername); ?> </p>
-				<p> Trueskill Sturm: <?php echo($trueskillfront); ?> </p>
-				<p> Trueskill Verteidigung: <?php echo($trueskillback); ?> </p>
-				<p> Trueskill Gesamt: <?php echo((($trueskillback+$trueskillfront)/2)); ?> </p>
-				<p> Spiele Sturm: <?php echo($gamesFront); ?> (<?php echo(round($winFront*100/$gamesFront)); ?>% Siegrate)</p>
-				<p> Spiele Verteidigung: <?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)</p>
-				<p> Spiele Gesamt: <?php echo(($gamesFront+$gamesBack)); ?> (<?php echo(round(($winBack+$winFront)*100/($gamesFront+$gamesBack))); ?>% Siegrate)</p>
-			</div>
-			
-			<div style="background-color: white;"> 
+		
+		<div class="flex-container" style="width:auto; height:auto">
+				<div class="flex-item" style="width:auto; height:auto">
+					<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
+						<div class="flex-item" style="background-color:grey; color: white; width:250px; margin:0px; float: left">
+						<p> Name: <?php echo($playername); ?> </p>
+						<p> Trueskill Sturm: <?php echo($trueskillfront); ?> </p>
+						<p> Trueskill Verteidigung: <?php echo($trueskillback); ?> </p>
+						<p> Trueskill Gesamt: <?php echo((($trueskillback+$trueskillfront)/2)); ?> </p>
+						<p> Spiele Sturm: <?php echo($gamesFront); ?> (<?php echo(round($winFront*100/$gamesFront)); ?>% Siegrate)</p>
+						<p> Spiele Verteidigung: <?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)</p>
+						<p> Spiele Gesamt: <?php echo(($gamesFront+$gamesBack)); ?> (<?php echo(round(($winBack+$winFront)*100/($gamesFront+$gamesBack))); ?>% Siegrate)</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="flex-item" style="width:auto; height: auto; margin: auto;">
+					<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
+						<div class="flex-item">
+							<div class="flex-container" style="width:auto; height:auto">
+								<div class="flex-item">
+									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+								</div>
+								<div class="flex-item">
+									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+								</div>
+								<div class="flex-item">
+									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+								</div>
+								<div class="flex-item">
+									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+								</div>
+							</div>
+						</div>
+						<div class="flex-item">
+							<img src="../Ressources/<?php echo($picture); ?>" alt="Profile Picture" style="background-color: white; width: 150px; height:150px; float: left;" >
+						</div>
+						<div class="flex-item">
+						Test
+						</div>
+					</div>
+				</div>
+				
+		</div>
+		
+		<div class="flex-container" style="width:auto; height:auto">
+		
+			<div class="flex-item" style="width:auto; height:auto; background-color: white;"> 
 				 <!-- float: left; -->
-			<canvas id="myChart" width="400" height="200"></canvas>
+			<canvas id="myChart" width="300" height="200"></canvas>
 			<script>
 			var ctx = document.getElementById("myChart");
 			var myChart = new Chart(ctx, {
@@ -111,9 +164,9 @@
 			</script>
 			</div>
 			
-			<div style="background-color: white;">
+			<div class="flex-item" style="background-color: white;">
 				
-			<canvas id="myChartFront" width="400" height="200"></canvas>
+			<canvas id="myChartFront" width="300" height="200"></canvas>
 			<script>
 			var ctx = document.getElementById("myChartFront");
 			var myChartFront = new Chart(ctx, {
