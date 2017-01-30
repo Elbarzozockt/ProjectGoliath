@@ -21,6 +21,7 @@ $numberOfRows=$result[1];
 $rowr = mysqli_fetch_row($values);
 
 $playername = $rowr[0];
+$picture =$rowr[1];
 $trueskillfront = $rowr[2];
 $trueskillback = $rowr[3];
 $gamesFront = $rowr[4];

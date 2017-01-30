@@ -36,11 +36,11 @@
 		display: flex;
 		width: auto;
 		height: auto;
-		background-color: lightgrey;
+		background-color: white;
 		}
 		
 		.flex-item {
-		background-color:cornflowerblue;
+		background-color:white;
 		width: auto;
 		height: auto;
 		margin: 5px;
@@ -51,175 +51,176 @@
 		
 	</head>
 	
-	<body style="padding: 0; margin:0; background-color:grey; color: white; width:650px">
+	<body style="padding: 0; margin:0; background-color:grey; color: white; width:650px; height:1300">
 		
-
-		<ul>
-			<li><a href="../index.html">Main</a></li>
-			<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
-			<li><a href="../WebScripts/getTeamratingweb.php">Team Rating</a></li>
-			<!-- <li><a href="../WebScripts/showAccountweb.php">Spieler Info</a></li> -->
-			<!-- <li><a href="../WebScripts/ChartData.php">AREA 51</a></li> -->
-		</ul>
-		
-		<div class="flex-container" style="width:auto; height:auto">
-				<div class="flex-item" style="width:auto; height:auto">
-					<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
-						<div class="flex-item" style="background-color:grey; color: white; width:250px; margin:0px; float: left">
-						<p> Name: <?php echo($playername); ?> </p>
-						<p> Trueskill Sturm: <?php echo($trueskillfront); ?> </p>
-						<p> Trueskill Verteidigung: <?php echo($trueskillback); ?> </p>
-						<p> Trueskill Gesamt: <?php echo((($trueskillback+$trueskillfront)/2)); ?> </p>
-						<p> Spiele Sturm: <?php echo($gamesFront); ?> (<?php echo(round($winFront*100/$gamesFront)); ?>% Siegrate)</p>
-						<p> Spiele Verteidigung: <?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)</p>
-						<p> Spiele Gesamt: <?php echo(($gamesFront+$gamesBack)); ?> (<?php echo(round(($winBack+$winFront)*100/($gamesFront+$gamesBack))); ?>% Siegrate)</p>
+		<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto;">
+			<div class="flex-item">
+				<ul>
+					<li><a href="../index.html">Main</a></li>
+					<li><a href="../WebScripts/getRatingweb.php">Solo Rating</a></li>
+					<li><a href="../WebScripts/getTeamratingweb.php">Team Rating</a></li>
+				</ul>
+			</div>
+			
+			<div class="flex-item">
+				<div class="flex-container" style="width:550px; height:auto">
+						<div class="flex-item" style="background-color:grey; color: white; width:250px; margin:0px">
+							<p>Name:  <br>
+							Trueskill Sturm:  <br>
+							Trueskill Verteidigung:  <br>
+							Trueskill Gesamt (mittel): <br>
+							Trueskill Gesamt (gewichtet):  <br>
+							Spiele Sturm:  <br>
+							Spiele Verteidigung:  <br>
+							Spiele Gesamt: </p>
 						</div>
-					</div>
-				</div>
-				
-				<div class="flex-item" style="width:auto; height: auto; margin: auto;">
-					<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
-						<div class="flex-item">
-							<div class="flex-container" style="width:auto; height:auto">
+						<div class="flex-item" style="background-color:grey; color: white; width:150px; margin:0px">
+						<p><?php echo($playername); ?><br>
+						<?php echo($trueskillfront); ?><br>
+						<?php echo($trueskillback); ?><br>
+						<?php echo(round(($trueskillback+$trueskillfront)/2)); ?> <br>
+						<?php echo(round(($trueskillback*$gamesBack+$trueskillfront*$gamesFront)/(($gamesFront+$gamesBack)))); ?><br>
+						<?php echo($gamesFront); ?> (<?php echo(round($winFront*100/$gamesFront)); ?>% Siegrate)<br>
+						<?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)<br>
+						<?php echo(($gamesFront+$gamesBack)); ?> (<?php echo(round(($winBack+$winFront)*100/($gamesFront+$gamesBack))); ?>% Siegrate)</p>
+						</div>
+						<div class="flex-item" style="width:auto; height: auto; margin: auto;">
+							<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
 								<div class="flex-item">
-									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+									<div class="flex-container" style="width:auto; height:auto">
+										<div class="flex-item">
+											<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px;" >
+										</div>
+										<div class="flex-item">
+											<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px;" >
+										</div>
+										<div class="flex-item">
+											<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px;" >
+										</div>
+										<div class="flex-item">
+											<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px;" >
+										</div>
+									</div>
 								</div>
 								<div class="flex-item">
-									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
-								</div>
-								<div class="flex-item">
-									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
-								</div>
-								<div class="flex-item">
-									<img src="../Ressources/<?php echo($batches); ?>" alt="Batch" style="background-color: white; width: 25px; height:25px; float: left;" >
+									<img src="../Resources/pictures/<?php echo($picture); ?>" alt="Profile Picture" style="background-color: white; width: 150px; height:150px;" >
 								</div>
 							</div>
 						</div>
-						<div class="flex-item">
-							<img src="../Ressources/<?php echo($picture); ?>" alt="Profile Picture" style="background-color: white; width: 150px; height:150px; float: left;" >
-						</div>
-						<div class="flex-item">
-						Test
-						</div>
-					</div>
 				</div>
-				
-		</div>
-		
-		<div class="flex-container" style="width:auto; height:auto">
-		
-			<div class="flex-item" style="width:auto; height:auto; background-color: white;"> 
-				 <!-- float: left; -->
-			<canvas id="myChart" width="300" height="200"></canvas>
-			<script>
-			var ctx = document.getElementById("myChart");
-			var myChart = new Chart(ctx, {
-				type: 'line',
-				data: {
-					labels: <?php echo($xDataFromPHPF); ?>,
-					datasets: [
-						{
-							label: "Trueskill Sturm",
-							fill: false,
-							lineTension: 0.1,
-							backgroundColor: "rgba(75,192,192,0.4)",
-							borderColor: "rgba(75,192,192,1)",
-							borderCapStyle: 'butt',
-							borderDash: [],
-							borderDashOffset: 0.0,
-							borderJoinStyle: 'miter',
-							pointBorderColor: "rgba(75,192,192,1)",
-							pointBackgroundColor: "#fff",
-							pointBorderWidth: 1,
-							pointHoverRadius: 5,
-							pointHoverBackgroundColor: "rgba(75,192,192,1)",
-							pointHoverBorderColor: "rgba(220,220,220,1)",
-							pointHoverBorderWidth: 2,
-							pointRadius: 1,
-							pointHitRadius: 10,
-							data: <?php echo($yDataFromPHPF); ?>,
-							spanGaps: false,
-						}
-					]
-				},
-				options: {
-					responsive:false,
-					maintainAspectRatio:false,
-					scales: {
-						xAxes: [{
-							ticks: {
-							    autoSkip:true,
-								maxTicksLimit:20,
-								beginAtZero:true
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								beginAtZero:false
-							}
-						}]
-					}
-				}
-			});
-			</script>
 			</div>
-			
-			<div class="flex-item" style="background-color: white;">
-				
-			<canvas id="myChartFront" width="300" height="200"></canvas>
-			<script>
-			var ctx = document.getElementById("myChartFront");
-			var myChartFront = new Chart(ctx, {
-				type: 'line',
-				data: {
-					labels: <?php echo($xDataFromPHPB); ?>,
-					datasets: [
-						{
-							label: "Trueskill Verteidigung",
-							fill: false,
-							lineTension: 0.1,
-							backgroundColor: "rgba(75,192,192,0.4)",
-							borderColor: "rgba(75,192,192,1)",
-							borderCapStyle: 'butt',
-							borderDash: [],
-							borderDashOffset: 0.0,
-							borderJoinStyle: 'miter',
-							pointBorderColor: "rgba(75,192,192,1)",
-							pointBackgroundColor: "#fff",
-							pointBorderWidth: 1,
-							pointHoverRadius: 5,
-							pointHoverBackgroundColor: "rgba(75,192,192,1)",
-							pointHoverBorderColor: "rgba(220,220,220,1)",
-							pointHoverBorderWidth: 2,
-							pointRadius: 1,
-							pointHitRadius: 10,
-							data: <?php echo($yDataFromPHPB); ?>,
-							spanGaps: false,
-						}
-					]
-				},
-				options: {
-					responsive:false,
-					maintainAspectRatio:false,
-					scales: {
-						xAxes: [{
-							ticks: {
-							    autoSkip:true,
-								maxTicksLimit:20,
-								beginAtZero:true
+						
+					<div class="flex-item" style="background-color: white;"> 
+							 <!-- float: left; -->
+						<canvas id="myChart" width="500px" height="200px"></canvas>
+						<script>
+						var ctx = document.getElementById("myChart");
+						var myChart = new Chart(ctx, {
+							type: 'line',
+							data: {
+								labels: <?php echo($xDataFromPHPF); ?>,
+								datasets: [
+									{
+										label: "Trueskill Sturm",
+										fill: false,
+										lineTension: 0.1,
+										backgroundColor: "rgba(75,192,192,0.4)",
+										borderColor: "rgba(75,192,192,1)",
+										borderCapStyle: 'butt',
+										borderDash: [],
+										borderDashOffset: 0.0,
+										borderJoinStyle: 'miter',
+										pointBorderColor: "rgba(75,192,192,1)",
+										pointBackgroundColor: "#fff",
+										pointBorderWidth: 1,
+										pointHoverRadius: 5,
+										pointHoverBackgroundColor: "rgba(75,192,192,1)",
+										pointHoverBorderColor: "rgba(220,220,220,1)",
+										pointHoverBorderWidth: 2,
+										pointRadius: 1,
+										pointHitRadius: 10,
+										data: <?php echo($yDataFromPHPF); ?>,
+										spanGaps: false,
+									}
+								]
+							},
+							options: {
+								responsive:false,
+								maintainAspectRatio:false,
+								scales: {
+									xAxes: [{
+										ticks: {
+											autoSkip:true,
+											maxTicksLimit:20,
+											beginAtZero:true
+										}
+									}],
+									yAxes: [{
+										ticks: {
+											beginAtZero:false
+										}
+									}]
+								}
 							}
-						}],
-						yAxes: [{
-							ticks: {
-								beginAtZero:false
+						});
+						</script>
+					</div>
+					
+					<div class="flex-item" style="background-color: white;">
+						
+						<canvas id="myChartFront" width="500px" height="200px"></canvas>
+						<script>
+						var ctx = document.getElementById("myChartFront");
+						var myChartFront = new Chart(ctx, {
+							type: 'line',
+							data: {
+								labels: <?php echo($xDataFromPHPB); ?>,
+								datasets: [
+									{
+										label: "Trueskill Verteidigung",
+										fill: false,
+										lineTension: 0.1,
+										backgroundColor: "rgba(75,192,192,0.4)",
+										borderColor: "rgba(75,192,192,1)",
+										borderCapStyle: 'butt',
+										borderDash: [],
+										borderDashOffset: 0.0,
+										borderJoinStyle: 'miter',
+										pointBorderColor: "rgba(75,192,192,1)",
+										pointBackgroundColor: "#fff",
+										pointBorderWidth: 1,
+										pointHoverRadius: 5,
+										pointHoverBackgroundColor: "rgba(75,192,192,1)",
+										pointHoverBorderColor: "rgba(220,220,220,1)",
+										pointHoverBorderWidth: 2,
+										pointRadius: 1,
+										pointHitRadius: 10,
+										data: <?php echo($yDataFromPHPB); ?>,
+										spanGaps: false,
+									}
+								]
+							},
+							options: {
+								responsive:false,
+								maintainAspectRatio:false,
+								scales: {
+									xAxes: [{
+										ticks: {
+											autoSkip:true,
+											maxTicksLimit:20,
+											beginAtZero:true
+										}
+									}],
+									yAxes: [{
+										ticks: {
+											beginAtZero:false
+										}
+									}]
+								}
 							}
-						}]
-					}
-				}
-			});
-			</script>
-			</div>
-			
+						});
+						</script>
+					</div>
 		</div>
 	</body>
 </html>
