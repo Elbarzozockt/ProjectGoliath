@@ -21,16 +21,16 @@ $numberOfRows=$result[1];
 $rowr = mysqli_fetch_row($values);
 
 $teamname= $rowr[0];
-$teammember1 = $rowr[0];
-$teammember2 =$rowr[1];
-$trueskill_c1 = $rowr[2];
-$trueskill_c2 = $rowr[3];
-$games_c1 = $rowr[4];
-$games_c2 = $rowr[5];
-$win_c1 = $rowr[6];
-$win_c2 = $rowr[7];
-
-
+$teammember1 = $rowr[5];
+$teammember2 =$rowr[6];
+$trueskill_c1 = $rowr[1];
+$trueskill_c2 = $rowr[2];
+$games_c1 = $rowr[3];
+$games_c2 = $rowr[4];
+$win_c1 = 0;
+$win_c2 = 0;
+$pictureplayer1 = $rowr[7];
+$pictureplayer2 = $rowr[8];
 
 $result = getLastTeamratings($dbc, $teamname);
 

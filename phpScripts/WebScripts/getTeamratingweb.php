@@ -28,7 +28,9 @@ $Rank=1;
 		$tablebody .= "<tr> <td>".$Rank."</td>";
 		$Rank++;
 		for ($j=0;$j<$numberOfRows;$j++) {
-			if($j==2 OR $j==3){
+			if($j==0){
+				$tablebody .= "<td><team>".$rowr[$j]."</team></td>";
+			}elseif($j==2 OR $j==3){
 				$tablebody .= "<td><player>".$rowr[$j]."</player></td>";
 			}else{
 			$tablebody .= "<td>".$rowr[$j]."</td>";

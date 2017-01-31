@@ -46,8 +46,28 @@
 		margin: 5px;
 		}
 		
-		
+		player {
+		color:blue;
+		}
 		</style>
+		
+		<script>
+			$(document).ready(function(){
+				$("player").click(function(){
+					var str = $(this).text();
+					window.location.href="../WebScripts/ChartData.php?accname="+str;
+					<!-- window.AppInventor.setWebViewString(str); -->
+				});
+			});
+			
+			$(document).ready(function(){
+				$("team").click(function(){
+					var str = $(this).text();
+					window.location.href="../WebScripts/getTeamweb.php?teamname="+str;
+					<!-- window.AppInventor.setWebViewString(str); -->
+				});
+			});
+		</script>
 		
 	</head>
 	
@@ -82,8 +102,8 @@
 						</div>
 						<div class="flex-item" style="background-color:grey; color: white; width:150px; margin:0px">
 						<p><?php echo($teamname); ?><br>
-						<?php echo($teammember1); ?><br>
-						<?php echo($teammember2); ?><br>
+						<player><?php echo($teammember1); ?></player><br>
+						<player><?php echo($teammember2); ?></player><br>
 						<?php echo(round(($trueskill_c1+$trueskill_c2)/2)); ?> <br>
 						<?php echo(round(($trueskill_c1*$games_c1+$trueskill_c2*$games_c2)/(($games_c1+$games_c2)))); ?><br>
 						<?php echo(($games_c1+$games_c2)); ?> (<?php echo(round(($win_c1+$win_c2)*100/($games_c1+$games_c2))); ?>% Siegrate)</p>
@@ -92,7 +112,7 @@
 						<?php echo($games_c1); ?> (<?php echo(round($win_c1*100/$games_c1)); ?>% Siegrate)</p>
 						<p> <br>
 						<?php echo($trueskill_c2); ?><br>
-						<?php echo($gamesBack); ?> (<?php echo(round($winBack*100/$gamesBack)); ?>% Siegrate)</p>
+						<?php echo($games_c2); ?> (<?php echo(round($win_c2*100/$games_c2)); ?>% Siegrate)</p>
 						</div>
 						<div class="flex-item" style="width:auto; height: auto; margin: auto;">
 							<div class="flex-container" style="-webkit-flex-direction:column; flex-direction:column; width:auto; height:auto">
@@ -113,10 +133,10 @@
 									</div>
 								</div>
 								<div class="flex-item" style="margin:auto;">
-									<img src="../Resources/pictures/<?php echo($picture); ?>" alt="Profile Picture" style="background-color: white; width: 100px; height:100px;" >
+									<img src="../Resources/pictures/<?php echo($pictureplayer1); ?>" alt="Profile Picture" style="background-color: white; width: 100px; height:100px;" >
 								</div>
 								<div class="flex-item" style="margin:auto;">
-									<img src="../Resources/pictures/<?php echo($picture); ?>" alt="Profile Picture" style="background-color: white; width: 100px; height:100px;" >
+									<img src="../Resources/pictures/<?php echo($pictureplayer2); ?>" alt="Profile Picture" style="background-color: white; width: 100px; height:100px;" >
 								</div>
 							</div>
 						</div>
@@ -134,7 +154,7 @@
 								labels: <?php echo($xDataFromPHP_c1); ?>,
 								datasets: [
 									{
-										label: "Trueskill Sturm",
+										label: "Config 1 S:<?php echo($teammember1); ?>, V:<?php echo($teammember2); ?>",
 										fill: false,
 										lineTension: 0.1,
 										backgroundColor: "rgba(75,192,192,0.4)",
@@ -190,7 +210,7 @@
 								labels: <?php echo($xDataFromPHP_c2); ?>,
 								datasets: [
 									{
-										label: "Trueskill Verteidigung",
+										label: "Config 2 S:<?php echo($teammember2); ?>, V:<?php echo($teammember1); ?>",
 										fill: false,
 										lineTension: 0.1,
 										backgroundColor: "rgba(75,192,192,0.4)",

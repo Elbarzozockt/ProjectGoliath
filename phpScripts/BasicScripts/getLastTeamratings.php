@@ -1,6 +1,6 @@
 <?php
 
- function getLastratings($dbc, $teamname){
+ function getLastTeamratings($dbc, $teamname){
 	 			
 	$LastMAXHundretRatings_c1= mysqli_query($dbc, "SELECT trueskill From team_rating AS TR INNER JOIN teams AS T ON T.Id=TR.Id_team INNER JOIN kicker_matches AS KM ON KM.Id=TR.Id_match  WHERE (T.name='$teamname' AND (TR.Id_team_config='1')) ORDER BY timestamp DESC 
 			LIMIT 100");

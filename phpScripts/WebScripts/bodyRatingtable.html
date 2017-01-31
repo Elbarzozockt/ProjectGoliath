@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body bgcolor="#5a5a5b">
+<style>
+	player {
+	color:blue;
+	}
+	
+	team {
+	color:blue;
+	}
+</style>
 <div data-role="content" data-theme="a">
 	
 		<ul>
@@ -27,6 +36,14 @@
 			$("player").click(function(){
 				var str = $(this).text();
 				window.location.href="../WebScripts/ChartData.php?accname="+str;
+				<!-- window.AppInventor.setWebViewString(str); -->
+			});
+		});
+		
+		$(document).ready(function(){
+			$("team").click(function(){
+				var str = $(this).text();
+				window.location.href="../WebScripts/getTeamweb.php?teamname="+str;
 				<!-- window.AppInventor.setWebViewString(str); -->
 			});
 		});
