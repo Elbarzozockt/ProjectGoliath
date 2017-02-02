@@ -5,7 +5,7 @@
 $Id_league=1;
 
 
-$GetIdLastmatches_querry ="SELECT Id, timestamp FROM kicker_matches WHERE Id_league='$Id_league' ORDER BY Id DESC LIMIT '$LimitOfMatches'";
+$GetIdLastmatches_querry ="SELECT Id, timestamp FROM kicker_matches WHERE Id_league='$Id_league' ORDER BY Id DESC LIMIT ".$LimitOfMatches;
 
 $GetIdLastmatches = mysqli_query($dbc, $GetIdLastmatches_querry);
 
@@ -34,7 +34,7 @@ while ($row = mysqli_fetch_row($test)) {
 
 }
 
-$numberOfFields=length($values[0]);
+$numberOfFields=sizeof($values[0]);
 
 return array($values, $numberOfFields);
 }

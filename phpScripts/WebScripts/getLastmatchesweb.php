@@ -25,14 +25,13 @@ $tablehead="<tr><td>Spiel</td><td>Zeit</td><td>Sturm</td><td>Tore</td><td>Vertei
 $tablebody="";
 
 $numberOfFields=$result[1];
-	for ($i=0;$i<length($values);$i++) {
+	for ($i=0;$i<sizeof($values);$i++) {
 		$tablebody .= "<tr>";
 		for ($j=0;$j<$numberOfFields;$j++) {
 			if($j==2 Or $j==4 Or $j==6 Or $j==8){
 				$tablebody .= "<td><player>".$values[$i][$j]."</player></td>";
-			elseif($j==5) {
-				$tablebody .= "<td>".$values[$i][$j]."</td><td>".$values[$i][3]+$values[$i][5].":".$values[$i][7]+$values[$i][9]."</td>";
-			}
+			}elseif($j==5) {
+				$tablebody .= "<td>".$values[$i][$j]."</td><td>".($values[$i][3]+$values[$i][5]).":".($values[$i][7]+$values[$i][9])."</td>";
 			}else{
 			$tablebody .= "<td>".$values[$i][$j]."</td>";
 			}
