@@ -23,7 +23,7 @@ $player = array();
 for($i=0; $i<$numberOfRows; $i++){
 $k = $Id_matches[$i][0];
 $iplus1= $i + 1;
-$player_querry ="SELECT player.name, player_scores.score FROM player_scores INNER JOIN player ON player.Id=player_scores.Id_player WHERE (Id_match='$k') ORDER BY position";
+$player_querry ="SELECT player.name, player.picture, player_scores.score FROM player_scores INNER JOIN player ON player.Id=player_scores.Id_player WHERE (Id_match='$k') ORDER BY position";
 
 $test =mysqli_query($dbc, $player_querry);
 
