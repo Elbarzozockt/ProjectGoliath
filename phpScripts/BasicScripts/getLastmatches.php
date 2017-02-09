@@ -30,6 +30,7 @@ $test =mysqli_query($dbc, $player_querry);
 while ($row = mysqli_fetch_row($test)) {
   $values[$i][] = $row[0];
   $values[$i][] = $row[1];
+  $values[$i][] = $row[2];
 }
 
 }

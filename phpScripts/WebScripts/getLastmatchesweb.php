@@ -20,23 +20,32 @@ $result = getLastmatches($dbc,$SinceTime ,$LimitOfMatches);
 
 $values=$result[0];
 
-$tablehead="<tr><td>Spiel</td><td>Zeit</td><td>Sturm</td><td>Tore</td><td>Verteidigung</td><td>Tore</td><td>Ergebnis</td> <td>Sturm</td><td>Tore</td><td>Verteidigung</td><td>Tore</td> </tr>";
-
-$tablebody="";
-
 $numberOfFields=$result[1];
 	for ($i=0;$i<sizeof($values);$i++) {
-		$tablebody .= "<tr>";
+		$FlexBox.="	<div class=\"flex-item\">
+						<div style=\"text-align:center;width:300px; height:auto;\">".$values[$i][1]."</div>
+						</div>
+					<div class=\"flex-item\">
+					<div class=\"flex-container\" style=\"width:300px; height:auto;\">";
+		
+		
 		for ($j=0;$j<$numberOfFields;$j++) {
-			if($j==2 Or $j==4 Or $j==6 Or $j==8){
-				$tablebody .= "<td><player>".$values[$i][$j]."</player></td>";
-			}elseif($j==5) {
-				$tablebody .= "<td>".$values[$i][$j]."</td><td>".($values[$i][3]+$values[$i][5]).":".($values[$i][7]+$values[$i][9])."</td>";
-			}else{
-			$tablebody .= "<td>".$values[$i][$j]."</td>";
+			if($j==2 Or $j==5 Or $j==8 Or $j==11){ //Spieler Bilder & Score
+				$FlexBox.="<div class=\"flex-item\" style=\"margin:auto;\">
+							<div class=\"playerpic\">
+								<img src=\"../Resources/pictures/".$values[$i][$j+1]."\" alt=\"".$values[$i][$j]."\" style=\"background-color: white;\" >
+								<span>".$values[$i][$j+2]."</span>
+							</div>
+						</div>";
+			}
+			elseif($j==7) { //Ergebnis
+				$FlexBox.="<div class=\"flex-item\" style=\"margin:auto;\">
+								<div style=\"background-color:red;width:50px;height:50px;border-radius:25px;text-align:center;\">".($values[$i][4]+$values[$i][7]).":".($values[$i][10]+$values[$i][13])."</div>
+				</div>";
 			}
 		}
-		$tablebody .= "</tr>";
+		$FlexBox.="</div>
+				</div>";
 	}
 
 	include ("../WebScripts/bodyLastmatches.html");
